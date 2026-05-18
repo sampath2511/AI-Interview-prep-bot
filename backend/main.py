@@ -17,12 +17,11 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from backend.models import PrepareRequest, PrepareResponse, CodingProblem
+from models import PrepareRequest, PrepareResponse, CodingProblem
 
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-
 # Load environment variables from .env file
 load_dotenv()
 
